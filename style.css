@@ -1,0 +1,208 @@
+ 
+ /*--------------------------------*/
+ /*-----CẤU HÌNH PHẦN BODY--------*/
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/*---------------------*/
+/*---------PHẦN CODE CÓ THỂ DÙNG LẠI---------*/
+
+
+/*----------------------*/
+/*----------------CODE DÙNG CHUNG---------------*/
+.fixed::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.more{
+    font-size: 18px;
+    color: blue;
+    text-decoration: none;
+}
+
+.btn{
+    font-size: 20px;
+    color: black;
+    background-color: orange;
+    text-decoration: none;
+    padding: 0px 5px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: all .5s;
+}
+
+.btn:hover{
+    background-color: rgb(224, 146, 1);
+}
+
+.Tieu-de, h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*------------------------------*/
+/*------------CẤU HÌNH PHẦN HEADER-----------*/
+
+header{
+    margin-bottom: 50px;
+}
+.wrap-main{
+    background-image: linear-gradient(1000deg,rgba(255, 60, 0, 0.8),rgba(238, 255, 0, 0.8)), url("../img/background1.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    margin: auto;
+    height:auto;
+}
+
+.menu-info{
+    font-size: 22px;
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.menu-info li a{
+    color: black;
+    text-decoration: none;
+    width: 110%;
+    height: 700;
+    transition: all .5s;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+.menu-info li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu-info li a:hover{
+    background-color:wheat;
+}
+
+ img.logo-facebook{
+     width: 50px;
+ }
+
+.logo-images{
+     width: 200px;
+     border-radius: 100px;
+     float: left;
+     margin-left: 70px;
+     margin-top: 10px;
+ }
+
+
+
+ .Tieu-de{
+     position: relative;
+     font-size: 30px;
+     text-align: center;
+     color:white;
+     margin-bottom: 50px;
+     word-spacing: 20px;
+ }
+
+/*-------------------------------------------------------*/
+/*------------------CẤU HÌNH PHẦN SECTION---------------*/
+
+section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.ten-hang img{
+    width: 140px;
+}
+
+.row{
+    height: 400px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.picture{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.picture img {
+    height: 100%;
+    width:90%;
+    border-radius: 30px;
+    border: 3px solid rgb(255, 173, 80);
+    box-shadow: 0px 5px 15px 10px rgb(237, 235, 100);
+    transition: all 0.4s;
+}
+
+.picture-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 18px;
+    width: 90%;
+    transform: translate(-50%,-10%);
+    color: white;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.picture:hover img{
+    filter: brightness(45%) blur(3px);
+}
+
+.picture:hover .picture-title{
+    transform: translate(-55%,-70%);
+    opacity: 1;
+}
+
+.name{
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    color: red;
+    font-size: 130%;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+h2::after{
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: rgba(255, 8, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+
+/*---------------------------------------*/
+/*------------PHẦN THÔNG TIN THÊM---------*/
+
+.info{
+    margin-top: 30px;
+}
+
+
